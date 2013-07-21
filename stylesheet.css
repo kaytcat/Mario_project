@@ -1,0 +1,23 @@
+.body {
+	position:relative;
+}
+
+
+.content {
+	position:relative;
+	margin:0 auto;
+	width: 500px;
+	height: 500px;
+	border: 1px solid #98FDE1;
+	background-color: rgb(215, 255, 253);
+	top:50px;
+}
+
+.grass {
+	position:absolute;
+	margin: none;
+	width: 500px;
+	height:100px;
+	background-color:#04AD04;
+	top:400px;
+}
