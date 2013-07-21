@@ -6,18 +6,103 @@
 .content {
 	position:relative;
 	margin:0 auto;
-	width: 500px;
+	width: 1000px;
 	height: 500px;
 	border: 1px solid #98FDE1;
 	background-color: rgb(215, 255, 253);
 	top:50px;
 }
 
+
+
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+}
+@-moz-keyframes shake {
+	0%, 100% {-moz-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+}
+@-ms-keyframes shake {
+	0%, 100% {-ms-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-ms-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-ms-transform: translateX(10px);}
+}
+@-o-keyframes shake {
+	0%, 100% {-o-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
+}
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+
+.shake {
+	-webkit-animation-name: shake;
+	-moz-animation-name: shake;
+	-ms-animation-name: shake;
+	-o-animation-name: shake;
+	animation-name: shake;
+}
+
 .grass {
 	position:absolute;
 	margin: none;
-	width: 500px;
-	height:100px;
+	width: 1000px;
+	height:50px;
 	background-color:#04AD04;
-	top:400px;
+	top:450px;
+
+}
+
+
+.grass_img_move {
+	width:980px;
+	height:100px;
+	position:absolute;
+	background: url(images/grass.png);
+	background-repeat:repeat-x;
+	top:363px;
+	right:10px;
+	animation: shake 5s infinite;
+  -webkit-animation:shake 5s infinite;
+}
+
+.grass_img {
+	width:1000px;
+	height:100px;
+	position:absolute;
+	background: url(images/grass.png);
+	background-repeat:repeat-x;
+	top:350px;
+}
+
+
+.clouds {
+	max-width:100%;
+	height:auto;
+	display:inline-block
+}
+.clouds div:first-child {
+	left:100px;
+	position:absolute;
+}
+
+.clouds div:nth-child(2) {
+	top:120px;
+	left:600px;
+	position:absolute;
+}
+
+.character {
+	width:20px;
+	height:20px;
+	background-color: black;
+	position:relative;
+
 }
