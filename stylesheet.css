@@ -104,5 +104,8 @@
 	height:20px;
 	background-color: black;
 	position:relative;
+	/*top:385px;*/
+	left:0px;
+	top: 385px;
 
 }
