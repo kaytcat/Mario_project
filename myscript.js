@@ -62,8 +62,8 @@ $(document).ready(function() {
 					}
 					break;
 				case 32: //jump (space)
-					$('.character').animate({top: "-=100px"}, 500);
-					$('.character').animate({top: "+=100px"}, 500);
+					$('.character').animate({top: "-=150px"}, 300);
+					$('.character').animate({top: "+=150px"}, 200);
 
 				default:
 					break;

@@ -8,12 +8,37 @@
 	margin:0 auto;
 	width: 1000px;
 	height: 500px;
-	border: 1px solid #98FDE1;
+	border-style: groove;
+	border: 10px solid #98FDE1;
 	background-color: rgb(215, 255, 253);
 	top:50px;
 }
 
+@-webkit-keyframes bubbleanim {
+  0% {
+    -webkit-transform: scale(1);
+  }
 
+  20% {
+    -webkit-transform: scaleY(0.95) scaleX(1.05);
+  }
+
+  48% {
+    -webkit-transform: scaleY(1.1) scaleX(0.9);
+  }
+
+  68% {
+    -webkit-transform: scaleY(0.98) scaleX(1.02);
+  }
+
+  80% {
+    -webkit-transform: scaleY(1.02) scaleX(0.98);
+  }
+
+  97%, 100% {
+    -webkit-transform: scale(1);
+  }
+}
 
 @-webkit-keyframes shake {
 	0%, 100% {-webkit-transform: translateX(0);}
@@ -87,6 +112,8 @@
 	max-width:100%;
 	height:auto;
 	display:inline-block
+	animation: bubbleanim 5s infinite;
+  -webkit-animation:bubbleanim 5s infinite;
 }
 .clouds div:first-child {
 	left:100px;
@@ -97,6 +124,13 @@
 	top:120px;
 	left:600px;
 	position:absolute;
+}
+
+.stool {
+	position:absolute;
+	top:200px;
+	left:200px;
+	
 }
 
 .character {
